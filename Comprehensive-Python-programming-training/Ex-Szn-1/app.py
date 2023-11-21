@@ -1,3 +1,6 @@
+# importing PIL For EX 6
+from PIL import Image
+
 select_ex = "n_" + input("Please Select one of the Exercises (1 - 7, not be 4): ")
 
 def ex1():
@@ -26,17 +29,31 @@ def ex5():
     c = b > 3
     print("Output:", c and a < 2)
 
-def ex6():
+def ex6(): 
+    # Read ex image
+    img = Image.open('EX6.jpg')
+    # Output Images
+    img.show()
+
     print('result of 7^10:', 7^10)
     print('result of 8&9:', 8&9)
     print('result of 66|2:', 66|2)
     print('result of 17>>2', 17>>2)
 
 def ex7():
-    print(7)
+    f_name = input('Please insert Your First Name: ')
+    l_name = input('Please insert Your Last Name: ')
+    student_number = input('Please insert Your Student Number: ')
+    print('Your First Name is: ' + f_name + '\nYour Last Name is: ' + l_name + '\nYour Student Number: ' + student_number)
 
 def ex8():
-    print(8)
+    print('2*3-6*2**3-6/2 =', 2*3-6*2**3-6/2 )
+    print('2*(3-6)*(2**(3-6/2)) =', 2*(3-6)*(2**(3-6/2)) )
+    print('as you can see, the first calculation is as follows:')
+    print('6-6*8-3= 6-48-3 = -45')
+    print('and the 2nd calculation is as follows:')
+    print('2*(-3)*(2^0)= -6*1= -6')
+
 
 exercises = {
     "n_1": ex1,
