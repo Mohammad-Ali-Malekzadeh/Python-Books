@@ -1,7 +1,7 @@
 # importing PIL For EX 6
 from PIL import Image
 
-select_ex = "n_" + input("Please Select one of the Exercises (1 - 7, not be 4): ")
+select_ex = "n_" + input("Please Select one of the Exercises (1 - 8, not be 4): ")
 
 def ex1():
     print("Welcome to First Exercise.")
@@ -11,7 +11,7 @@ def ex1():
     print("Total entries:", num1 + num2 + num3)
 
 def ex2():
-    print("Welcome to Sexond Exercise.")
+    print("Welcome to Second Exercise.")
     num1 = int(input("Please Enter First Num: "))
     num2 = int(input("Please Enter Second Num: "))
     print("Average entries:", (num1 + num2) / 2)
