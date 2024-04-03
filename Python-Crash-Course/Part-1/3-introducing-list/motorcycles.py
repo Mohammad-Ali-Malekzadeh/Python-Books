@@ -53,3 +53,28 @@ print('------------ 6 ------------')
 motorcycles = ['honda', 'yamaha', 'suzuki']
 first_owned = motorcycles.pop(0)
 print(f"The first motorcycle I owned was a {first_owned.title()}.")
+
+# Removing an Item by Value
+print('------------ 7 ------------')
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print(motorcycles)
+
+motorcycles.remove('ducati')
+print(motorcycles)
+
+motorcycles = ['honda', 'yamaha', 'suzuki', 'ducati']
+print(motorcycles)
+too_expensive = 'ducati'
+motorcycles.remove(too_expensive)
+print(motorcycles)
+print(f"\nA {too_expensive.title()} is too expensive for me.")
+
+# Avoiding Index Errors When Working with Lists
+motorcycles = ['honda', 'yamaha', 'suzuki']
+# print(motorcycles[3])
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles[-1])
+
+# motorcycles = []
+# print(motorcycles[-1])
